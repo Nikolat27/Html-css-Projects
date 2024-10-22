@@ -1,0 +1,41 @@
+<head>
+    <style>
+        .div-grid1 {
+            display: grid;
+            grid-template-columns: 250px 75px;
+        }
+
+        .div-grid2 {
+            display: grid;
+            grid-template-columns: 50px 1fr 75px;
+        }
+
+        .div-grid3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div-grid1">
+        <div style="background-color: palevioletred;">div1</div>
+        <div style="background-color: blueviolet;">div2</div>
+    </div>
+
+    <div class="div-grid2">
+        <div style="background-color: palevioletred;">div1</div>
+        <div style="background-color: blueviolet;">div2</div>
+        <div style="background-color: red;">div3</div>
+    </div>
+    <br><br>
+    <div class="div-grid3">
+        <div style="background-color: palevioletred;">div1</div>
+        <div style="background-color: blueviolet;">div2</div>
+        <div style="background-color: black; color: white;">div3</div>
+        <div style="background-color: red;">div4</div>
+        <div style="background-color: purple;">div5</div>
+        <div style="background-color: green;">div6</div>
+    </div>
+</body>
