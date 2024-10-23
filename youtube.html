@@ -8,7 +8,8 @@
         body {
             height: 2000px;
             padding-top: 70px;
-            padding-left: 100px;
+            padding-left: 120px;
+            background-color: rgba(0, 0, 0, 0.05);
         }
 
         .title-div {
@@ -17,10 +18,6 @@
 
         .author-div {
             display: block;
-        }
-
-        .video-info {
-            background-color: white;
         }
 
         .video-info-grid {
@@ -40,7 +37,7 @@
             display: flex;
             flex-direction: row;
             height: 60px;
-            border-bottom: 1px solid gray;
+            border-bottom: 0.5px solid rgb(234, 229, 229);
             justify-content: space-between;
             background-color: white;
             position: fixed;
@@ -142,7 +139,7 @@
             bottom: 0;
             left: 0;
             top: 60px;
-            border: 1px solid black;
+            border-bottom: 0.5px solid rgb(234, 229, 229);
             width: 100px;
             background-color: white;
         }
@@ -160,6 +157,51 @@
             right: 6px;
             padding: 3px 6px 3px 6px;
             border-radius: 2px;
+        }
+
+        .notification-icon-container {
+            position: relative;
+        }
+
+        .notification-count {
+            position: absolute;
+            top: -5;
+            right: -5;
+            width: 8px;
+            height: 13px;
+            background-color: rgb(254, 5, 63);
+            color: white;
+            font-family: Roboto, Arial;
+            font-size: 12px;
+            border-radius: 50%;
+            padding: 2px 5px 2px 5px;
+            display: inline-block;
+        }
+
+        .side-bar-link {
+            background-color: white;
+            height: 76px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        .side-bar-link div {
+            font-family: Roboto, Arial;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        .side-bar-link img {
+            height: 30px;
+            margin-bottom: 4px;
+        }
+
+        .side-bar-link:hover {
+            background-color: lightgray;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -182,14 +224,40 @@
         </div>
         <div class="right-section">
             <img class="upload-icon" src="icons/upload.svg" alt="">
-            <img class="notification-icon" src="icons/notifications.svg" alt="">
+            <div class="notification-icon-container">
+                <img class="notification-icon" src="icons/notifications.svg" alt="">
+                <div class="notification-count">1</div>
+            </div>
             <img class="youtube-apps-icon" src="icons/youtube-apps.svg" alt="">
             <img class="channel-pic-icon" src="images/Django.png" alt="">
         </div>
     </div>
 
     <div class="side-bar-div">
-        sidebar
+        <div class="side-bar-link">
+            <img src="icons/home.svg" alt="">
+            <div>Home</div>
+        </div>
+        <div class="side-bar-link">
+            <img src="icons/explore.svg" alt="">
+            <div>Explore</div>
+        </div>
+        <div class="side-bar-link">
+            <img src="icons/subscriptions.svg" alt="">
+            <div>Subscription</div>
+        </div>
+        <div class="side-bar-link">
+            <img src="icons/originals.svg" alt="">
+            <div>Original</div>
+        </div>
+        <div class="side-bar-link">
+            <img src="icons/youtube-music.svg" alt="">
+            <div>Youtube Music</div>
+        </div>
+        <div class="side-bar-link">
+            <img src="icons/library.svg" alt="">
+            <div>Library</div>
+        </div>
     </div>
     <div class="container">
         <div class="video-preview">
