@@ -5,6 +5,12 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <style>
+        body {
+            height: 2000px;
+            padding-top: 70px;
+            padding-left: 100px;
+        }
+
         .title-div {
             display: inline-block;
         }
@@ -32,9 +38,14 @@
         .header {
             display: flex;
             flex-direction: row;
-            height: 50px;
-            border: 2px solid rgb(152, 150, 150);
+            height: 60px;
+            border-bottom: 1px solid gray;
             justify-content: space-between;
+            background-color: white;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
         }
 
         .left-section {
@@ -124,6 +135,16 @@
             width: 35px;
             border-radius: 18px;
         }
+
+        .side-bar-div {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            top: 60px;
+            border: 1px solid black;
+            width: 100px;
+            background-color: white;
+        }
     </style>
 </head>
 
@@ -151,7 +172,9 @@
         </div>
     </div>
 
-    <br><br>
+    <div class="side-bar-div">
+        sidebar
+    </div>
     <div class="container">
         <div class="video-preview">
             <div class="thumbnail">
